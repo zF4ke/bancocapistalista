@@ -1,0 +1,26 @@
+{
+  "name": "bancocapitalista",
+  "version": "1.0.0",
+  "description": "bancocapitalista",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "zF4ke#8556",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "common-tags": "^1.8.0",
+    "crypto": "^1.0.1",
+    "discord.js": "^11.5.1",
+    "lowdb": "^1.0.0",
+    "nodemon": "^2.0.4",
+    "scalc": "^2.0.1"
+  }
+}
