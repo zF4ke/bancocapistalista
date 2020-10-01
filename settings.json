@@ -1,6 +1,6 @@
 {
-    "token": "",
+    "token": "YOUR_BOT_TOKEN",
     "prefix": "$",
-    "ID": "650411898096844820",
+    "ID": "YOUR_BOT_ID",
     "color": "#034df8"
 }

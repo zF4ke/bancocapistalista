@@ -7,6 +7,13 @@ const adapter = new FileSync('users.json')
 const db = low(adapter)
 const { Message } = require('discord.js');
 
+const adapterRifas = new FileSync('settingsRifas.json')
+const dbRifas = low(adapterRifas)
+
+const lorittaPrefix = dbRifas.get("prefixo").find({"id": "prefixo"}).value().lorittaPrefix
+
+const settings = require('../settings.json');
+
 module.exports.run = async (bot, msg, args) => {
     const { red, green, blue, yellow, cyan } = require('chalk');
 
@@ -48,7 +55,7 @@ module.exports.run = async (bot, msg, args) => {
             return;
             }
 
-            msg.channel.send(`+atm`).then((botMsg) => {
+            msg.channel.send(`${lorittaPrefix}atm`).then((botMsg) => {
                 botMsg.delete()
                 msg.delete()
             })
@@ -67,7 +74,7 @@ module.exports.run = async (bot, msg, args) => {
                 msg.channel.send(errEmbed)
             return;
             }
-            msg.channel.send(`+pay ${msg.author} ${info}`).then((botMsg) => {
+            msg.channel.send(`${lorittaPrefix}pay ${msg.author} ${info}`).then((botMsg) => {
                 botMsg.delete()
             })
 
@@ -91,7 +98,7 @@ module.exports.run = async (bot, msg, args) => {
                 msg.channel.send(errEmbed)
             return;
             }
-            msg.channel.send(`+pay ${info} ${info2}`)
+            msg.channel.send(`${lorittaPrefix}pay ${info} ${info2}`)
             let membro = msg.mentions.users.first()
 
             const payCollector = msg.channel.createMessageCollector(payC => payC.author.id === "297153970613387264" && payC.content.includes(`<@${membro.id}>`) && payC.content.includes("transferir"), { max: 1, time: 15000 })
@@ -145,7 +152,7 @@ module.exports.run = async (bot, msg, args) => {
                 break
                 case "set":
                     let usuario2 = msg.mentions.users.first()
-                    let permissao = args[4]
+                    let permissao = Number(args[3])
 
                     if(!usuario2) {
                         let errEmbed = new RichEmbed();
@@ -165,6 +172,8 @@ module.exports.run = async (bot, msg, args) => {
                     let permsSettedEmbed = new RichEmbed();
                     permsSettedEmbed.setTitle('✅ Permissões setadas com sucesso.')
                     msg.channel.send(permsSettedEmbed)
+                    bot.destroy()
+                    bot.login(settings.token);
                 break
                 case "list":
                     const permsListEmbed = new RichEmbed()
