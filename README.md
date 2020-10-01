@@ -13,7 +13,7 @@
 
 ## Conteúdo
 
-* [Como usar](#Como usar)
+* [Como usar](#Comousar)
 * [Comandos](#comandos)
 * [Licença](#Licença)
 * [Contacto](#Contacto)
