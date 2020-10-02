@@ -54,8 +54,8 @@ accounts.json
 | `$bank help` | Lista de comandos dentro do discord. |
 | `$bank money` | Subcomando que o dinheiro total do banco |
 | `$bank withdraw [quantia]` | Use para retirar dinheiro do banco. |
-| `$bank pay (usuario) [quantia]` | para enviar dinheiro a uma pessoa especifica. |
-| `$bank perms` | Para ver a lista de permissões. |
+| `$bank pay (usuario) [quantia]` | Use para enviar dinheiro a uma pessoa especifica. |
+| `$bank perms` | Use para ver a lista de permissões. |
 
 <h4>Bank Perms</h4>
 
