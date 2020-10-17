@@ -104,7 +104,7 @@ Link do Projeto: [https://github.com/zF4ke/antlia-j](https://github.com/zF4ke/an
 
 ## Licença
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the GNU GPLv3 License. See `LICENSE` for more information.
 
 [contributors-shield]: https://img.shields.io/github/contributors/zF4ke/bancocapistalista.svg?style=flat-square
 [contributors-url]: https://github.com/zF4ke/bancocapistalista/graphs/contributors
