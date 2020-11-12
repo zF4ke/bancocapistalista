@@ -100,7 +100,7 @@ Use `$bank ping` para checkar o status do bot.
 
 zF4ke - Discord zF4ke#8556 - pedrohsilva955gmail.com
 
-Link do Projeto: [https://github.com/zF4ke/antlia-j](https://github.com/zF4ke/antlia-j)
+Link do Projeto: [https://github.com/zF4ke/bancocapistalista](https://github.com/zF4ke/bancocapistalista)
 
 ## Licença
 
