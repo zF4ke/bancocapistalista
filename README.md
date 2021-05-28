@@ -1,13 +1,9 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+
 
 <br />
 <p align="center">
   <a href="https://github.com/zF4ke/bancocapistalista">
-    <img src="https://cdn.discordapp.com/avatars/717160524349177927/bbe30937938fe1701e7863a59a508dcd.png" alt="Logo" width="80" height="80">
+   
   </a>
 
   <h3 align="center">Banco Capitalista</h3>
